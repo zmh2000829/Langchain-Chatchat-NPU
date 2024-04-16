@@ -46,7 +46,7 @@ docker run -it -v /{code_path}/pytorch:/home/pytorch manylinux-builder:v1 bash
 
 ### {code_path} is the torch_npu source code path
 ### 如无法Pull docker镜像，修改 /etc/docker/daemon.json 代码增加如下
-# "registry-mirrors": [
+# "insecure-registries": [
 #     "quay.io"
 # ]
 ### 如进入docker无法pip install，在DockerFile添加相应代理 
